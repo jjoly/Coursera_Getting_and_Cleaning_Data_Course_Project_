@@ -107,7 +107,7 @@ names(output_avg_df)[2] <- "Activity"
 ## I now change the names of the columns to show these are the average for each activity and each subject
 
 #Write the data frame to a file
-write.table(output_avg_df, paste("tidy.txt", sep = "/"), sep = "\t", append = F)
+write.table(output_avg_df, paste("tidy.txt", sep = "/"), sep = "\t", append = F, row.name=FALSE)
 
 
 
